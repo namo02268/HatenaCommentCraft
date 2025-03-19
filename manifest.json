@@ -17,6 +17,9 @@
       "matches": [
         "https://blog.hatena.ne.jp/*/*/comment*"
       ],
+      "exclude_matches": [
+        "https://blog.hatena.ne.jp/*/*/comment/delete*"
+      ],
       "js": [
         "./js/content.js",
         "./js/marked.min.js"
