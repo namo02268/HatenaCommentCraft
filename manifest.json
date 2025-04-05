@@ -2,15 +2,21 @@
   "name": "Hatena Comment Craft",
   "version": "1.0.0",
   "manifest_version": 3,
-  "description": "はてなブログのコメント投稿フォームを改善する拡張機能",
+  "description": "はてなブログのコメント投稿画面を使いやすくする拡張機能です。マークダウンモードを有効にすると、マークダウン記法でコメントを入力しながら、リアルタイムでプレビューを確認できます。",
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "storage"
   ],
   "icons": {
     "16": "images/icon-16.png",
     "32": "images/icon-32.png",
     "48": "images/icon-48.png",
     "128": "images/icon-128.png"
+  },
+  "action": {
+    "default_title": "Hatena Comment Craft",
+    "default_icon": "images/icon-48.png",
+    "default_popup": "html/popup.html"
   },
   "content_scripts": [
     {
