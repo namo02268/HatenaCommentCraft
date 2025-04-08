@@ -211,7 +211,7 @@ function updatePreview(textarea, previewBox) {
   previewDoc.close();
 
   if (commentBox) {
-    commentBox.value = parsed.replace(/<pre[^>]*>|<\/pre>/g, '');
+    commentBox.value = '</p>' + parsed.replace(/<pre[^>]*>|<\/pre>/g, '') + '<p>';
   }
 }
 
